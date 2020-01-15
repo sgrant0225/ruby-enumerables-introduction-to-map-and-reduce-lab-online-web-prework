@@ -69,4 +69,5 @@ while i < source_array.length do
   return true if source_array[i]
   i += 1
 end
+false
 end
