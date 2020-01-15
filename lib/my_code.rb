@@ -40,4 +40,29 @@ while i < squared_array.length do
   array
 end
 
-  
+def reduce_to_total(source_array, starting_point = 0) 
+total = starting_point
+  i = 0 
+  while i < source_array.length do
+    total += source_array[i]
+    i += 1
+  end
+total
+end
+#code below is another passing code
+#source_array.reduce(starting_point) { |sum, num| sum + num }
+
+
+def reduce_to_all_true(source_array)
+i = 0 
+while i < source_array.length do
+return false if !source_array[i]
+i += 1
+end 
+true 
+end
+
+
+
+
+
